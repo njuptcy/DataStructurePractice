@@ -33,12 +33,27 @@
     <ClInclude Include="list\single_list.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="queue\single_queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="queue\single_cycle_queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\I_stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stack\seq_stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="list\seq_list_main.cpp">
       <Filter>头文件</Filter>
     </ClCompile>
     <ClCompile Include="queue\queue_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\stack_main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

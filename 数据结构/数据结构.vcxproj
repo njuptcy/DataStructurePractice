@@ -123,11 +123,16 @@
     <ClInclude Include="list\seq_list.h" />
     <ClInclude Include="queue\seq_queue.h" />
     <ClInclude Include="list\single_list.h" />
+    <ClInclude Include="queue\single_cycle_queue.h" />
+    <ClInclude Include="queue\single_queue.h" />
+    <ClInclude Include="stack\I_stack.h" />
+    <ClInclude Include="stack\seq_stack.h" />
     <ClInclude Include="which_to_run.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="list\seq_list_main.cpp" />
     <ClCompile Include="queue\queue_main.cpp" />
+    <ClCompile Include="stack\stack_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,6 +4,7 @@
 
 //#define _SEQ_LIST_MAIN_
 
-#define _QUEUE_MAIN_
+//#define _QUEUE_MAIN_
 
+#define _STACK_MAIN_
 #endif
