@@ -1,36 +1,38 @@
 #pragma once
 #include<iostream>
 #include"i_seq_list.h"
-using std::ostream;
+
 
 
 //template<class T>
 //ostream& operator<<(ostream & out, const I_seq_list<T> &list);
+using std::ostream;
 template<class T>
-ostream& operator<<(ostream & out, const I_seq_list<T> &list)
+ostream& operator<<(ostream & out, I_seq_list<T> &list)
 {
-	//int x;
-	//for (int i = 0; i < list.n; i++)
-	//{
-	//	//out << list.at(i)<<' ';
-	//	//这样使用没有编译错误，但是得到的输出结果不对
-	//	//out << list.at(i) << "    ";
-	//	if (list.at(i, x))
-	//		out << x << ' ';
-	//}
+	int x;
+	for (int i = 0; i < list.length(); i++)
+	{
+		//out << list.at(i)<<' ';
+		//这样使用没有编译错误，但是得到的输出结果不对 
+		//out << list.at(i) << "    ";
+		if (list.at(i, x))
+			out << x << ' ';
+		else
+			out << "the index at " << i<<" wrong"<< std::endl;
+	}
 	//out << '\n';
-	//return out;
 	return out;
 }
 
 //template<typename T> class Seq_list;
 
-template<typename T>
-void func( I_seq_list<T> &a)
-{
-	//std::cout << a.data[0] << std::endl;
-	//std::cout << a.data[0] << std::endl;
-}
+//template<typename T>
+//void func( I_seq_list<T> &a)
+//{
+//	//std::cout << a.data[0] << std::endl;
+//	//std::cout << a.data[0] << std::endl;
+//}
 
 
 template<class T>
@@ -60,6 +62,16 @@ public :
 			return false;
 		x = data[i];
 		return true;
+	}
+
+	virtual T& operator[](int i) override
+	{
+		if(  i < 0 || i > n-1 )
+		{
+			std::cout << "index overstep the boundary!" << endl;
+			return data[0];
+		}
+		return data[i];
 	}
 	virtual int search(const T &x) const override
 	{
@@ -102,7 +114,12 @@ public :
 			
 		if (i < 0 || i > n - 1)
 			return false;
-		for( int j = n-1; j > i; j--)
+		/*for( int j = n-1; j > i; j--)
+		{
+			data[j - 1] = data[j];
+		}*/
+
+		for(int j = i + 1; j < n; j++)
 		{
 			data[j - 1] = data[j];
 		}
@@ -114,7 +131,7 @@ private:
 
 	//friend void func<T>(I_seq_list<T> &a);
 	//报错
-	friend void func(I_seq_list<T> &a);
+	//friend void func(I_seq_list<T> &a);
 	//friend ostream& operator<<(ostream & out, const I_seq_list<T> &list);
 	//friend ostream& operator<<(ostream & out, const I_seq_list<T> &list)
 	//{

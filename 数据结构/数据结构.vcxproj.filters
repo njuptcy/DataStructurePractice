@@ -18,16 +18,28 @@
     <ClInclude Include="which_to_run.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="i_seq_list.h">
+    <ClInclude Include="queue\i_queue.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="seq_list.h">
+    <ClInclude Include="queue\seq_queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="list\i_seq_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="list\seq_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="list\single_list.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="list\seq_list_main.cpp">
       <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\queue_main.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

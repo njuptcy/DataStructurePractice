@@ -8,9 +8,16 @@ public:
 	virtual bool is_empty() const = 0;
 	virtual bool is_full() const = 0;
 	virtual bool at(int i, T &x) = 0;
+	virtual T& operator[](int i) = 0;
 	virtual int search(const T &x) const = 0;
 	virtual bool insert(int i ,const T &x) = 0;
 	virtual bool  remove(int i) = 0;
+	virtual int length() { return n; }
+	I_seq_list()
+	{
+
+		n = 0;
+	}
 	virtual ~I_seq_list()
 	{
 
