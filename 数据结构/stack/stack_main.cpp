@@ -3,18 +3,18 @@
 #ifdef _STACK_MAIN_
 #include"I_stack.h"
 #include"seq_stack.h"
-
+#include"link_stack.h"
 #include<iostream>
 using namespace std;
 int main()
 {
 	const int max_size = 4;
-	I_stack<int>  * stack = new Seq_stack<int>(max_size);
+	//I_stack<int>  * stack = new Seq_stack<int>(max_size);
+	I_stack<int> *stack = new Link_stack<int>();
 	for(int i = 0; i < 5; i++)
 	{
 		if (!(stack->push(i)))
 			printf("when push %d, fail.\n", i);
-
 	}
 	for(int i = 0; i < 5; i++)
 	{

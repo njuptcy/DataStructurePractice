@@ -37,7 +37,15 @@ int main()
 	{
 		list->insert(-1, i);
 	}
-
+	for (int i = max_size; i > 0; i--)
+	{
+		list->insert(-1, i);
+	}
+	cout << "before sort:" << endl;
+	list->display();
+	cout << "after sort:" << endl;
+	list->sort();
+	list->display();
 	int index = list->search(0);
 	//cout << "the index of 0 is:"<<
 	printf("the index of %d is %d\n", 0, index);

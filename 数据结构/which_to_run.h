@@ -6,5 +6,9 @@
 
 //#define _QUEUE_MAIN_
 
-#define _STACK_MAIN_
+//#define _STACK_MAIN_
+
+//#define _POLY_MAIN_
+
+#define _MERGE_SORT_MERGE_
 #endif

@@ -123,6 +123,136 @@ public:
 		n--;
 		return true;
 	}
+
+	void sort() override
+	{
+		if(head->next == nullptr || head->next->next == nullptr)
+		{
+			return;
+		}
+		
+		
+		int until = 100000;
+		while(until != 0)
+		{
+			Node<T> * cur = head->next;
+			Node<T> * pre = head;
+			int i = 0;
+			int flag = 0;
+			while (cur->next != nullptr && i < until)
+			{
+				if (cur->data > cur->next->data)
+				{
+					flag = i;
+					Node<T> * next_cur = cur->next;
+					pre->next = next_cur;
+					cur->next = next_cur->next;
+					next_cur->next = cur;
+				}
+				else
+				{
+					cur = cur->next;
+				}
+				pre = pre->next;
+				i++;
+			}
+			until = flag;
+			cout << until << endl;
+			display();
+		}
+		
+		/*
+		while( until > 1)
+		{
+			pre = head;
+			cur = head->next;
+			int flag = 1;
+			int i = 0;
+			while( i < until)
+			{
+				if( cur->data > cur->next->data)
+				{
+					Node<T>*next_cur = cur->next;
+					pre->next = next_cur;
+					cur->next = next_cur->next;
+					next_cur->next = cur;
+				}
+				else
+				{
+					cur = cur->next;
+				}
+				pre = pre->next;
+				i++;
+			}
+		}
+*/
+
+
+
+	}
+
+
+	//指针操作有个问题，until指针指向的结点原来是第2个元素，但是对它进行了重新
+	//连接后，或许他就变成了第一个元素了
+	//所以可以考虑用计数的方式
+	//void sort() override
+	//{
+	//	//Node<T> *data_head = head->next;
+	//	if( head->next == nullptr || head ->next->next == nullptr )
+	//	{
+	//		return;
+	//	}
+
+	//	//until极until之后的元素是有序的
+	//	Node<T>*until = nullptr;
+
+	//	while(  until != head -> next ->next)
+	//	{
+	//		Node<T> * pre_cur = head;
+	//		Node<T>* flag = nullptr;
+	//		Node<T> * cur = head->next;
+	//		while(cur->next != until)
+	//		{
+	//			Node<T> *cur_next = cur->next;
+	//			if(  cur->data > cur_next->data)
+	//			{					
+	//				pre_cur->next = cur_next;
+	//				cur->next = cur_next->next;
+	//				cur_next->next = cur;	
+	//				pre_cur = pre_cur->next;
+	//				flag = cur;
+	//			}
+	//			else
+	//			{
+	//				pre_cur = pre_cur->next;
+	//				cur = cur_next;
+	//			}
+	//		}
+	//		if(flag != nullptr)
+	//		{
+	//			until = flag;
+	//		}
+	//		else
+	//		{
+	//			until = head->next->next;
+	//		}
+	//		
+	//	}
+
+
+	//}
+
+	void display() const override
+	{
+		Node<T> * cur = head->next;
+		while(cur != nullptr)
+		{
+			cout << cur->data << " ";
+			cur = cur->next;
+		}
+		cout << endl;
+	}
+
 	//virtual int length() { return n; }
 
 };

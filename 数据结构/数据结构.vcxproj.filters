@@ -45,6 +45,15 @@
     <ClInclude Include="stack\seq_stack.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="stack\link_stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="polynomial\polynomial.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tree\I_binary_tree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="list\seq_list_main.cpp">
@@ -54,6 +63,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="stack\stack_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="polynomial\poly_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sort\merge_sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

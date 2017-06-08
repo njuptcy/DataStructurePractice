@@ -13,6 +13,14 @@ public:
 	virtual bool insert(int i ,const T &x) = 0;
 	virtual bool  remove(int i) = 0;
 	virtual int length() { return n; }
+	virtual void display() const 
+	{
+		
+	}
+	virtual void sort ()
+	{
+
+	}
 	I_seq_list()
 	{
 
