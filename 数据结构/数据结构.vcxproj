@@ -136,6 +136,8 @@
     <ClCompile Include="list\seq_list_main.cpp" />
     <ClCompile Include="polynomial\poly_main.cpp" />
     <ClCompile Include="queue\queue_main.cpp" />
+    <ClCompile Include="sort\find_kth_max_ele.cpp" />
+    <ClCompile Include="sort\find_max_and_min_simutaneously.cpp" />
     <ClCompile Include="sort\merge_sort.cpp" />
     <ClCompile Include="stack\stack_main.cpp" />
   </ItemGroup>
