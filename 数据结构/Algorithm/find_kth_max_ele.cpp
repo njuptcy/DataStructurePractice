@@ -14,7 +14,8 @@ int partition(int a[], int p, int r)
 {
 	int par_val = a[p];
 	int i = p +1 , j = r;
-	while(i < j)
+	//while(i < j)
+	do
 	{
 		while (a[i] < par_val) i++;
 		while (a[j] > par_val) j--;
@@ -22,9 +23,9 @@ int partition(int a[], int p, int r)
 		{
 			swap(a[i], a[j]);
 		}
-	}
-	if(a[j] <= a[p])
-		swap(a[j], a[p]);
+	} while (i < j);
+	//if(a[j] <= a[p])
+	swap(a[j], a[p]);
 	return j;
 }
 
@@ -57,18 +58,34 @@ int find_k_max_ele(int a[], int len, int k)
 	*/
 
 
+	int begin = 0, end = len - 1;
 	int real_index = len - k;
-	int part_index = partition(a, 0, len-1);
+	int part_index = partition(a, begin, end);
+	//cout << part_index << endl;
+	/*Dcout dcout;
+	dcout.debug = true;
+	dcout << part_index << '\n';*/
+
+	Arr_utility<int>::get_dcout().debug = true;
+	Arr_utility<int>::get_dcout() << part_index << "\n";
+	Arr_utility<int>::print_all(a, len);
+
+	
 	while (part_index != real_index)
 	{
 		if (part_index < real_index)
 		{
-			part_index = partition(a, part_index+1, len-1);
+			begin = part_index + 1;
+			part_index = partition(a, begin, end);
 		}
 		else if (part_index > real_index)
 		{
-			part_index = partition(a, 0, part_index-1);
+			end = part_index - 1;
+			part_index = partition(a, begin, end);
 		}
+		cout << "begin:" << begin << ";end:" << end << ";part_index:"<<part_index<<endl;
+		Arr_utility<int>::print_all(a,len);
+		getchar();
 	}
 	return a[part_index];
 }

@@ -71,10 +71,19 @@
     <ClCompile Include="sort\merge_sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sort\find_max_and_min_simutaneously.cpp">
+    <ClCompile Include="Algorithm\find_kth_max_ele.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sort\find_kth_max_ele.cpp">
+    <ClCompile Include="Algorithm\find_max_and_min_simutaneously.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sort\insert_sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sort\bubble_sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sort\quick_sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
