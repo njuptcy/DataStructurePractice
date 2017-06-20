@@ -8,7 +8,9 @@ using namespace std;
 
 void m_merge(int a[], int left1, int right1, int left2, int right2 )
 {
+
 	int total_len = (right1 - left1 + 1) + (right2 - left2 + 1);
+	//申请长度为临时数组
 	int *temp = new int[total_len];
 	int i = left1, j = left2;
 
