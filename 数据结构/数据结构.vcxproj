@@ -84,6 +84,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -118,6 +119,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bstree.h" />
+    <ClInclude Include="I_DynamicSet.h" />
     <ClInclude Include="polynomial\polynomial.h" />
     <ClInclude Include="queue\i_queue.h" />
     <ClInclude Include="list\i_seq_list.h" />
@@ -133,11 +136,15 @@
     <ClInclude Include="which_to_run.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="binary_searchcpp.cpp" />
+    <ClCompile Include="BStree_main.cpp" />
+    <ClCompile Include="kmp_sub_str.cpp" />
     <ClCompile Include="list\seq_list_main.cpp" />
     <ClCompile Include="polynomial\poly_main.cpp" />
     <ClCompile Include="queue\queue_main.cpp" />
     <ClCompile Include="Algorithm\find_kth_max_ele.cpp" />
     <ClCompile Include="Algorithm\find_max_and_min_simutaneously.cpp" />
+    <ClCompile Include="simple_pattern_matching.cpp" />
     <ClCompile Include="sort\bubble_sort.cpp" />
     <ClCompile Include="sort\insert_sort.cpp" />
     <ClCompile Include="sort\merge_sort.cpp" />

@@ -1,0 +1,26 @@
+﻿生成启动时间为 2017/6/19 21:48:36。
+     1>项目“D:\Get_Jobs\DataStructurePractice\数据结构\数据结构.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt BStree_main.cpp
+         BStree_main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Get_Jobs\DataStructurePractice\x64\Debug\数据结构.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Get_Jobs\DataStructurePractice\x64\Debug\数据结构.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Get_Jobs\DataStructurePractice\x64\Debug\数据结构.lib" /MACHINE:X64 x64\Debug\binary_searchcpp.obj
+         x64\Debug\BStree_main.obj
+         x64\Debug\kmp_sub_str.obj
+         x64\Debug\seq_list_main.obj
+         x64\Debug\poly_main.obj
+         x64\Debug\queue_main.obj
+         x64\Debug\find_kth_max_ele.obj
+         x64\Debug\find_max_and_min_simutaneously.obj
+         x64\Debug\simple_pattern_matching.obj
+         x64\Debug\bubble_sort.obj
+         x64\Debug\insert_sort.obj
+         x64\Debug\merge_sort.obj
+         x64\Debug\quick_sort.obj
+         x64\Debug\stack_main.obj
+         数据结构.vcxproj -> D:\Get_Jobs\DataStructurePractice\x64\Debug\数据结构.exe
+     1>已完成生成项目“D:\Get_Jobs\DataStructurePractice\数据结构\数据结构.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.17

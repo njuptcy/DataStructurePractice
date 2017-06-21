@@ -54,6 +54,12 @@
     <ClInclude Include="tree\I_binary_tree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="I_DynamicSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bstree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="list\seq_list_main.cpp">
@@ -84,6 +90,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="sort\quick_sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_pattern_matching.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kmp_sub_str.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="binary_searchcpp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BStree_main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
