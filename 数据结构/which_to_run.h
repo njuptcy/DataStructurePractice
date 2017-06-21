@@ -12,11 +12,12 @@
 //#define K_MAX_ELE
 //#define INSERT_SORT
 //#define BUBBLE_SORT
-//#define QUICK_SORT
+#define QUICK_SORT
 //#define FIND_SUBSTR
 //#define KMP_SUBSTR
 //#define BINARY_SEARCH
-#define BSTREE
+//#define BSTREE
+//#define SKIP_LIST
 
 #define ARR_LEN(a) (sizeof(a)/sizeof(a[0]))
 
@@ -60,7 +61,7 @@ public:
 		using std::endl;
 		for(int i = 0; i < len; i++)
 		{
-			cout << arr[i];
+			cout << arr[i]<<"  ";
 		}
 		cout << endl;
 	}

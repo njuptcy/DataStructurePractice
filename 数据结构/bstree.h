@@ -216,8 +216,55 @@ public:
 	}
 	void printf_nodes()
 	{
+		memset(node_arr,0,sizeof(node_arr));
+		//tree_high = 1;
+		tree_high = fill_node_arr(root, 0);
+		int layer_nodes = 1;
+		int index = 0;
+		for (int i = 0; i < tree_high; i++)
+		{
+			for (int j = 0; j < layer_nodes; j++)
+			{
+				if (node_arr[index] == 0)
+				{
+					std::cout << "X  ";
+				}
+				else
+				{
+					std::cout << node_arr[index]->data<<"  ";
+				}
+				index++;
+			}
+			layer_nodes *= 2;
+			cout << endl;
 
+		}
 	}
 private:
 	Node<T>* root;
+	Node<T>*node_arr[128];
+	int tree_high;
+	int fill_node_arr(Node<T>*p, int num)
+	{
+		//bool has_child = false;
+		//int high;
+		int left_high=0, righ_high=0;
+		node_arr[num] = p;
+		if (p->left)
+		{
+			left_high = fill_node_arr(p->left, 2*num+1);
+			//has_child = true;
+		}
+		if (p->right)
+		{
+			righ_high = fill_node_arr(p->right, 2*num +2);
+			//has_child = true;
+		}
+	/*	if (has_child)
+		{
+			
+		}*/
+		return (left_high > righ_high ? left_high : righ_high) + 1;
+
+	}
 };

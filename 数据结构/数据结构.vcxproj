@@ -129,6 +129,8 @@
     <ClInclude Include="list\single_list.h" />
     <ClInclude Include="queue\single_cycle_queue.h" />
     <ClInclude Include="queue\single_queue.h" />
+    <ClInclude Include="skip_list.h" />
+    <ClInclude Include="skip_list_new.h" />
     <ClInclude Include="stack\I_stack.h" />
     <ClInclude Include="stack\link_stack.h" />
     <ClInclude Include="stack\seq_stack.h" />
@@ -145,6 +147,7 @@
     <ClCompile Include="Algorithm\find_kth_max_ele.cpp" />
     <ClCompile Include="Algorithm\find_max_and_min_simutaneously.cpp" />
     <ClCompile Include="simple_pattern_matching.cpp" />
+    <ClCompile Include="skip_list.cpp" />
     <ClCompile Include="sort\bubble_sort.cpp" />
     <ClCompile Include="sort\insert_sort.cpp" />
     <ClCompile Include="sort\merge_sort.cpp" />

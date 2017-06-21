@@ -5,6 +5,7 @@ const int SUCCESS = 0x1;
 const int FAILURE = 0X2;
 const int DUMPLICATE = 0X4;
 const int NOTEXIST = 0x8;
+const int OUTOFRANGE = 0X16;
 char *get_result_str(int result)
 {
 	static char rs[128];
@@ -24,6 +25,10 @@ char *get_result_str(int result)
 	if (result & 0x8)
 	{
 		strcat(rs, "noexisit ");
+	}
+	if (result & 0x16)
+	{
+		strcat(rs, "outofrange ");
 	}
 	return rs;
 }
