@@ -28,6 +28,9 @@ int main()
 	cout <<endl<< "****************" << endl;
 	bs.remove(5);
 	bs.print_nodes();
+	bs.insert(16);
+	cout << endl << "******************" << endl;
+	bs.printf_nodes();
 	getchar();
 
 

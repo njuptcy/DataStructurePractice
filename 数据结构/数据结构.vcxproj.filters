@@ -60,6 +60,12 @@
     <ClInclude Include="bstree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="skip_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="skip_list_new.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="list\seq_list_main.cpp">
@@ -102,6 +108,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="BStree_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="skip_list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
