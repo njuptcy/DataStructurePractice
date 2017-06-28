@@ -31,6 +31,12 @@ int main()
 	bs.insert(16);
 	cout << endl << "******************" << endl;
 	bs.printf_nodes();
+	cout << endl << "***************" << endl;
+	bs.preorder_traverse();
+	cout << endl << "***************" << endl;
+	bs.inorder_traverse();
+	cout << endl << "***************" << endl;
+	bs.postorder_traverse();
 	getchar();
 
 

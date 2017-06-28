@@ -74,6 +74,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -138,6 +139,7 @@
     <ClInclude Include="which_to_run.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="2_dimension_array_test.cpp" />
     <ClCompile Include="binary_searchcpp.cpp" />
     <ClCompile Include="BStree_main.cpp" />
     <ClCompile Include="kmp_sub_str.cpp" />
@@ -146,6 +148,7 @@
     <ClCompile Include="queue\queue_main.cpp" />
     <ClCompile Include="Algorithm\find_kth_max_ele.cpp" />
     <ClCompile Include="Algorithm\find_max_and_min_simutaneously.cpp" />
+    <ClCompile Include="simple_graph.cpp" />
     <ClCompile Include="simple_pattern_matching.cpp" />
     <ClCompile Include="skip_list.cpp" />
     <ClCompile Include="sort\bubble_sort.cpp" />
@@ -153,6 +156,7 @@
     <ClCompile Include="sort\merge_sort.cpp" />
     <ClCompile Include="sort\quick_sort.cpp" />
     <ClCompile Include="stack\stack_main.cpp" />
+    <ClCompile Include="standard_cin_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

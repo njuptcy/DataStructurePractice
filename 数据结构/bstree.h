@@ -1,6 +1,7 @@
 #pragma once
-#include<vector>
 #include<queue>
+#include<vector>
+#include<stack>
 #include<iostream>
 using namespace std;
 
@@ -238,6 +239,79 @@ public:
 			layer_nodes *= 2;
 			cout << endl;
 
+		}
+	}
+
+	void preorder_traverse()
+	{
+		//std::queue<Node<T>*> q;
+		std::stack<Node<T>*> s;
+		Node<T> *p = root;
+		//q.push(p);
+		while(p != NULL || !s.empty())
+		{
+			while( p != NULL)
+			{
+				std::cout << p->data << " ";
+				s.push(p);
+				p = p->left;
+			}
+			if(!s.empty())
+			{
+				p = s.top();
+				s.pop();
+				p = p->right;
+			}
+		}
+	}
+
+	void inorder_traverse()
+	{
+		std::stack<Node<T> *> s;
+		Node<T> *p = root;
+		while(p != NULL || !s.empty())
+		{
+			while(p!= NULL)
+			{
+				s.push(p);
+				p = p->left;
+			}
+			if(!s.empty())
+			{
+				p = s.top();
+				s.pop();
+				cout << p->data << " ";
+				p = p->right;
+			}
+		}
+	}
+	void postorder_traverse()
+	{
+		std::stack<Node<T>*> s;
+		Node<T>* cur;
+		Node<T>* pre = NULL;
+		s.push(root);
+		while(!s.empty())
+		{
+			cur = s.top();
+			if( (cur->left == NULL && cur->right == NULL) || 
+				(pre!=NULL &&(pre == cur->left || pre == cur->right)) )
+			{
+				cout << cur->data << " ";
+				pre = cur;
+				s.pop();
+			}
+			else
+			{
+				if(cur->right!= NULL)
+				{
+					s.push(cur->right);
+				}
+				if(cur->left != NULL) 
+				{
+					s.push(cur->left);
+				}
+			}
 		}
 	}
 private:

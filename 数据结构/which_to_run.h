@@ -12,12 +12,17 @@
 //#define K_MAX_ELE
 //#define INSERT_SORT
 //#define BUBBLE_SORT
-#define QUICK_SORT
+//#define QUICK_SORT
 //#define FIND_SUBSTR
 //#define KMP_SUBSTR
 //#define BINARY_SEARCH
-//#define BSTREE
+#define BSTREE
 //#define SKIP_LIST
+
+
+//#define SIMPLE_GRAPH
+//#define TWO_DIMENSION_ARR_TEST
+//#define STANDARD_CIN
 
 #define ARR_LEN(a) (sizeof(a)/sizeof(a[0]))
 

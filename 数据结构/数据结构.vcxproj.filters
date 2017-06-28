@@ -113,5 +113,14 @@
     <ClCompile Include="skip_list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="simple_graph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2_dimension_array_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="standard_cin_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
