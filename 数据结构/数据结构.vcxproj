@@ -22,6 +22,7 @@
     <ProjectGuid>{1ED624FD-ACF6-4DB5-BDF2-A1452B713CAE}</ProjectGuid>
     <RootNamespace>数据结构</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>DataStructure</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -121,6 +122,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bstree.h" />
+    <ClInclude Include="graph\ExtLGraph.h" />
+    <ClInclude Include="graph\Graph.h" />
+    <ClInclude Include="graph\heap.h" />
+    <ClInclude Include="graph\LGraph.h" />
+    <ClInclude Include="graph\MGraph.h" />
+    <ClInclude Include="graph\test_macro.h" />
+    <ClInclude Include="graph\UFset.h" />
     <ClInclude Include="I_DynamicSet.h" />
     <ClInclude Include="polynomial\polynomial.h" />
     <ClInclude Include="queue\i_queue.h" />
@@ -142,6 +150,14 @@
     <ClCompile Include="2_dimension_array_test.cpp" />
     <ClCompile Include="binary_searchcpp.cpp" />
     <ClCompile Include="BStree_main.cpp" />
+    <ClCompile Include="c_plus_plus_features\typeid_judge_the_template_type.cpp" />
+    <ClCompile Include="c_plus_plus_features\virtual_func.cpp" />
+    <ClCompile Include="graph\extGraph_main.cpp" />
+    <ClCompile Include="graph\graph_main.cpp" />
+    <ClCompile Include="graph\heap.cpp" />
+    <ClCompile Include="graph\simple_graph.cpp" />
+    <ClCompile Include="graph\simple_heap_main.cpp" />
+    <ClCompile Include="graph\UFSet.cpp" />
     <ClCompile Include="kmp_sub_str.cpp" />
     <ClCompile Include="list\seq_list_main.cpp" />
     <ClCompile Include="polynomial\poly_main.cpp" />

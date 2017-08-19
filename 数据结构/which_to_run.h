@@ -16,13 +16,28 @@
 //#define FIND_SUBSTR
 //#define KMP_SUBSTR
 //#define BINARY_SEARCH
-#define BSTREE
+//#define BSTREE
 //#define SKIP_LIST
-
 
 //#define SIMPLE_GRAPH
 //#define TWO_DIMENSION_ARR_TEST
 //#define STANDARD_CIN
+
+
+//****************C++ features*****************
+//#define C_PLUS_FEATURES_TYPEID_JUDEGE_TEMPLATE_TYPE
+//#define VIRTUAL_FUNCTION
+//*********************************************
+
+
+//****************graph*********************
+//#define EXTRA_GRAPH_BFS_DFS_TOPOSORT
+//#define GRAPTH_INSERT_EXIST_REMOVE
+//#define HEAP_CPP
+//#define SIMPLE_GRAPH_PRIM_KRUSKAL_DIJKSTRA
+//#define SIMPLE_HEAP_MAIN
+//#define UFSET_MAIN
+//********************************************
 
 #define ARR_LEN(a) (sizeof(a)/sizeof(a[0]))
 
